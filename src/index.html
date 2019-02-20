@@ -5,11 +5,78 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-      <h2>bienvenida </h2>
+    <!-- sección de bienvenida -->
+    <div class="container" id="container1">
+      <div class="headp">     
+        <h1>@WorkLab</h1>
+        <p>Genera correos y contraseñas fuertes y únicas con un clic para tu empresa aqui¡¡</p> 
+      </div>      
+      <div class="bodyp form-group">
+        <form>
+          <label for="name">¿Cuál es el nombre de tu empresa?</label>
+          <input type="text" id="name"  placeholder="Ingresar Nombre"/>
+        </form>
+        <button type="button" id="btnB">Siguiente</button>
+      </div>
     </div>
+
+    <!-- sección de Opciones -->
+    <div class="container" id="container2">
+      <div class="headp">     
+        <h1>@WorkLab</h1>
+        <p id="saludo"></p>
+      </div>      
+      <div class="bodyp form-group">
+        <h2>¿Que es lo que quieres realizar?</h2>
+        <div class="seleccion">
+          <div class="left">
+            <button  type="button" id="btnReg">Registrar</button>
+          </div>
+          <div class="right">
+            <button type="button" id="btnIden">Identificar</button>
+          </div>
+        </div>        
+      </div>
+    </div>
+
+    <!-- sección de Opcion Registrar -->
+    <div class="container" id="container3">
+      <div class="headp">     
+        <h1>@WorkLab</h1>
+        <p>Ingresa los datos del Empleado</p>
+      </div>      
+      <div class="bodyp form-group">
+        <form>
+          <label for="name">Ingrese primer Nombre :</label>
+          <input type="text" id="name"  placeholder="Ingresar primer Nombre"/><br>
+
+          <label for="lastname">Ingrese primer Apellido :</label>
+          <input type="text" id="lastname"  placeholder="Ingresar primer Apellido"/><br>
+
+          <label for="seguridad">Nivel de seguridad :</label>
+          <input type="text" id="seguridad"  placeholder="Ingrese Dificultad"/>
+
+
+
+        </form>
+        <button type="button" id="btnB">Siguiente</button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
