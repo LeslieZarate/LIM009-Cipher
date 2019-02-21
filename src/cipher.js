@@ -10,6 +10,10 @@ window.cipher = {
 				numeroAscii = String.fromCharCode((numeroAscii - 65 + parseInt(offset)) % 26 + 65);
 				resultCad = resultCad + numeroAscii;
 			}
+			if (numeroAscii >= 97 && numeroAscii <= 122){
+				numeroAscii = String.fromCharCode((numeroAscii - 67 + parseInt(offset)) % 26 + 97);
+				resultCad = resultCad + numeroAscii;
+			}
 		}
 		return resultCad
 
