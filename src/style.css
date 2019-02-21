@@ -1,74 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
 body{
 	background-image: url("https://www.tuyu.es/wp-content/uploads/2017/07/security23.jpg");
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-size:cover;	
 }
-
-#container2, #container3{
-	display: none;
+header{
+	background-color: #65c6c4;
+	color: #113f67;
+	text-align: center;
+	font-size:40px;
+	padding: 5px;
+}
+.description{
+	background-color: #408ab4;
+	color:#ffc60b;
+	font-size: 25px;
+	padding: 10px;
 }
 
-.container{
-	background-color:#74b49b;        /*fondo oscuro */
+.description p{
+	font-size: 22px;
+	color:#cdffeb;
+
+}
+
+section {
+	background-color: #408ab4;
+	color: #red;
 	text-align: center;
-	height: 400px;
-	width: 700px;	
-	margin: 150px auto;
-	border: 4px solid #74b49b;
+}
+
+.classic-container{	
+	height: 350px;
+	width: 600px;	
+	margin: 50px auto;
+	border: 4px solid #65c6c4;
 	border-radius: 6px;
 	font-weight: bold;
+	padding: 40px;
 	
-	/*
-	overflow: hidden;
-	position: absolute;
-	height: 400px;
-	width: 700px;
-	left: 50%;
-	top: 50%;
-	margin-top: -200px;
-	margin-left: -350px; 
-	*/
+}
 
-}
-.headp{
-	background-color:#ebefd0;   /* fondo*/
-	padding: 5px;	
-}
-.headp h1{
-	font-size: 50px;
-	color: #5c8d89;
-}
-.headp p{
-	font-size: 25px;
-	color:#74b49b  ;
-	
-}
-.bodyp{
+#formulario{
 	margin-top: 20px;
-	color :#10316b;
-	font-size: 20px;
 }
 
 input{	
+	justify-content: center;
 	border-radius: 6px;
-	margin-top: 1em;
+	margin-top: 20px;
 	margin-left: 15px;
-	width: 400px;
-	height:30px;
+	width: 500px;
+	height:40px;
 	border-radius: 6px;
+	font-size: 18px;
+
+
 }
 
 label{
-	margin-top:10px;
+	
+	justify-content: center;
+	margin-top:20px;
 	display: block;
     padding-left: 15px;
-    text-indent: -15px;
+    font-size: 21px;
+    color:#ffc60b;
+    
+    
 }
 
 button{
   background-color: #ccc;
-  width: 200px;
+  width: 150px;
   height: 50px;
   border: none;
   border-radius: 6px;
@@ -81,24 +91,38 @@ button{
   text-align: center;
 }
 
+.seleccion{
+	
+
+justify-content: center;
+}
 .left{
 	float:left;
-	padding: 1em;
+	padding: 10px;
 	margin-left: 100px;
+	font-weight: bold;
 	}
 
 .right{
 	float:right;
-	padding: 1em;
+	padding: 10px;
 	margin-right: 100px;
+	font-weight: bold;
 }
-
-#container3{
-	margin: 80px auto;
-	height: 550px;
-}
-
-
 
    
+#resultado{
+	display: none;
+}
 
+
+footer{
+	background-color: rgb(217, 217, 217);
+    color: #113f67;
+    bottom: 0;	
+	
+  	padding:10px;
+  	text-align: center;
+
+    
+}

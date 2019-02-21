@@ -7,77 +7,67 @@
   </head>
 
   <body>
-    <!-- sección de bienvenida -->
-    <div class="container" id="container1">
-      <div class="headp">     
-        <h1>@WorkLab</h1>
-        <p>Genera correos y contraseñas fuertes y únicas con un clic para tu empresa aqui¡¡</p> 
-      </div>      
-      <div class="bodyp form-group">
-        <form>
-          <label for="name">¿Cuál es el nombre de tu empresa?</label>
-          <input type="text" id="name"  placeholder="Ingresar Nombre"/>
-        </form>
-        <button type="button" id="btnB">Siguiente</button>
-      </div>
-    </div>
+    <header>
+      <div>   
+        <h1>Safe <img src="img/candado.png" alt="img" width="80px" height="80px"> Key</h1>
+      </div>    
+    </header>
 
-    <!-- sección de Opciones -->
-    <div class="container" id="container2">
-      <div class="headp">     
-        <h1>@WorkLab</h1>
-        <p id="saludo"></p>
-      </div>      
-      <div class="bodyp form-group">
-        <h2>¿Que es lo que quieres realizar?</h2>
+<!--Decripcion del producto-->
+    <section class="description">
+      <div class="">
+        <h2>Contraseñas cifradas para tu seguridad y tranquilidad.</h2>
+        <p>Resiste al hackeo y usa contraseñas seguras para diversas webs, tiendas online, o cualquier otro lugar en el que puedas necesitar una clave. </p>
+      </div>
+    </section>
+
+<!-- PROGRAMA STRING Y OFFSET -->
+    <section class="classic-container" id= "programa">
+      <div>
+        <h1>Bienvenido al Encriptador de Contraseñas Seguras </h1>
+      </div>
+      <div id="formulario">
+        <div>
+          <form class ="text-inputs text-align">
+            <div >
+              <label for="message">Ingrese texto :</label>
+              <input type="text" id="message"  placeholder="Ingresar texto . . ."/><br>
+              <p class="error" id="empty-message"></p>
+            </div>
+            <div>
+              <label for="offset">Nivel de Seguridad:</label>
+              <input type="number" id="offset"  placeholder="Nivel de seguridad . . ."/><br>
+              <p class="error" id= "empty-offset"></p>
+            </div>
+          </form>
+        </div>        
         <div class="seleccion">
           <div class="left">
-            <button  type="button" id="btnReg">Registrar</button>
+            <button id="btn-encode" type="button" name="Cifrar" class="">CIFRAR</button>
           </div>
           <div class="right">
-            <button type="button" id="btnIden">Identificar</button>
+            <button id="btn-decode"  type="button" name="descifrar" class="">DESCIFRAR</button>
           </div>
         </div>        
       </div>
-    </div>
+    </section>
 
-    <!-- sección de Opcion Registrar -->
-    <div class="container" id="container3">
-      <div class="headp">     
-        <h1>@WorkLab</h1>
-        <p>Ingresa los datos del Empleado</p>
-      </div>      
-      <div class="bodyp form-group">
-        <form>
-          <label for="name">Ingrese primer Nombre :</label>
-          <input type="text" id="name"  placeholder="Ingresar primer Nombre"/><br>
-
-          <label for="lastname">Ingrese primer Apellido :</label>
-          <input type="text" id="lastname"  placeholder="Ingresar primer Apellido"/><br>
-
-          <label for="seguridad">Nivel de seguridad :</label>
-          <input type="text" id="seguridad"  placeholder="Ingrese Dificultad"/>
+    <!--Mostrar-->
+    <section class="classic-container" id="resultado">
+      <h1>El resultado es:</h1>
+      <div>
+        <h1 id="final-message"></h1>
+      </div>     
+      <button id="new-message" type="button" name="nuevo" >NUEVO MENSAJE</button>
+    </section>
+  
 
 
-
-        </form>
-        <button type="button" id="btnB">Siguiente</button>
- <button type="button" id="btnB">Siguiente</button>
+    <footer>
+      <div class="footer">
+        <p>Copyright © Todos los Derechos Reservados - Safe Key</p>
       </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
