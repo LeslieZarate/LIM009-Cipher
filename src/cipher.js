@@ -1,29 +1,42 @@
 window.cipher = {
-  encode: (offset,string) => {
+ 	encode: (offset,string) => {
 		let numeroAscii;
-    let resultCad = "";
-//RECORRIDO EL MENSAJE INGRESADO
+	    let resultCif = "";
+	//RECORRIDO EL MENSAJE INGRESADO
 		for (let i = 0; i < string.length; i++){
-			numeroAscii = string.charCodeAt(i);
-	// mayúsculas
-			if (numeroAscii >= 65 && numeroAscii <= 90){
-				numeroAscii = String.fromCharCode((numeroAscii - 65 + parseInt(offset)) % 26 + 65);
-				resultCad = resultCad + numeroAscii;
+				numeroAscii = string.charCodeAt(i);
+		// mayúsculas
+				if (numeroAscii >= 65 && numeroAscii <= 90){
+					numeroAscii = String.fromCharCode((numeroAscii - 65 + parseInt(offset)) % 26 + 65);
+					resultCif = resultCif + numeroAscii;
+				}
+				else if (numeroAscii >= 97 && numeroAscii <= 122){
+					numeroAscii = String.fromCharCode((numeroAscii - 97 + parseInt(offset)) % 26 + 97);
+					resultCif = resultCif + numeroAscii;
+				}
+
+		
 			}
-			if (numeroAscii >= 97 && numeroAscii <= 122){
-				numeroAscii = String.fromCharCode((numeroAscii - 67 + parseInt(offset)) % 26 + 97);
-				resultCad = resultCad + numeroAscii;
-			}
-		}
-		return resultCad
+			return resultCif
 
 	},
-
 	
+	decode: (offset,string) => {
+		let numeroAscii;
+		let resultDes ="";
+		for(let i =0;i<string.length;i++){
+			numeroAscii=string.charCodeAt(i);
 
-  decode: () => {
-    /* Acá va tu código */
+			if (numeroAscii >= 65 && numeroAscii <= 90){
+				numeroAscii = String.fromCharCode((numeroAscii - 65 - parseInt(offset)) % 26 + 65);
+				resultDes = resultDes + numeroAscii;
+			}
+		}
+		return resultDes
+  
 	}
+
+  
 	
 };
 
