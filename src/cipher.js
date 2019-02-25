@@ -27,7 +27,7 @@ window.cipher = {
 			numeroAscii=string.charCodeAt(i);
 
 			if (numeroAscii >= 65 && numeroAscii <= 90){
-				numeroAscii = String.fromCharCode((numeroAscii - 65 + clave) % 26 + 65);
+				numeroAscii = String.fromCharCode((numeroAscii - 90 - parseInt(offset)) % 26 + 90);
 				resultDes = resultDes + numeroAscii;
 			}
 			if (numeroAscii >= 97 && numeroAscii <= 122){
