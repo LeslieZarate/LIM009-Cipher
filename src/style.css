@@ -1,11 +1,10 @@
 *{
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 }
 
 body{
-	background-image: url("https://www.tuyu.es/wp-content/uploads/2017/07/security23.jpg");
+	background-image: url("img/fondo.jpg");
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-size:cover;	
@@ -29,11 +28,10 @@ header{
 	color:#cdffeb;
 
 }
-
 section {
 	background-color: #408ab4;
-	color: #red;
 	text-align: center;
+	opacity: 0.5;
 }
 
 .classic-container{	
@@ -92,8 +90,6 @@ button{
 }
 
 .seleccion{
-	
-
 justify-content: center;
 }
 .left{
@@ -114,15 +110,10 @@ justify-content: center;
 #resultado{
 	display: none;
 }
-
-
 footer{
 	background-color: rgb(217, 217, 217);
-    color: #113f67;
-    bottom: 0;	
-	
-  	padding:10px;
-  	text-align: center;
-
-    
+  color: #113f67;
+  bottom: 0;		
+  padding:10px;
+  text-align: center;
 }
