@@ -46,9 +46,6 @@ window.cipher = {
 		return resultDes
   
 	}
-
-  
-	
 };
 
 

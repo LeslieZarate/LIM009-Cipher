@@ -33,9 +33,7 @@ opciones.addEventListener("click",(e)=>{
 	document.getElementById("programa").style.display="none";
     document.getElementById("resultado").style.display="block";
 
-
 });
-
 
 /*Nuevo Mensaje*/
  const newMessage = document.getElementById("new-message");
@@ -43,9 +41,3 @@ opciones.addEventListener("click",(e)=>{
  function nuevo(){
  	location.reload()
  }
-
-
-
-
-
-
