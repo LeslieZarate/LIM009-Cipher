@@ -8,7 +8,7 @@
 
   <body>
     <header>
-      <div>   
+      <div class="title-header"> 
         <h1>Safe <img src="img/candado.png" alt="img" width="80px" height="80px"> Key</h1>
       </div>    
     </header>
@@ -23,51 +23,44 @@
 
 <!-- PROGRAMA STRING Y OFFSET -->
     <section class="classic-container" id= "programa">
-      <div>
-        <h1>Bienvenido al Encriptador de Contraseñas Seguras </h1>
-      </div>
-      <div id="formulario">
-        <div>
-          <form class ="text-inputs text-align">
-            <div >
-              <label for="message">Ingrese texto :</label>
-              <input type="text" id="message"  placeholder="Ingresar texto . . ."/><br>
-              <p class="error" id="empty-message"></p>
+      <h1>Bienvenido al Encriptador de Contraseñas Seguras </h1>
+      <div  id="formulario">        
+        <form>
+          <div class="form-classic">
+            <label for="message">Ingrese Texto :</label>
+            <textarea id="message" class ="textarea" cols="60" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+               <p class="error" id= "empty-string"></p>
             </div>
-            <div>
+            <div class="form-classic">
               <label for="offset">Nivel de Seguridad:</label>
-              <input type="number" id="offset"  placeholder="Nivel de seguridad . . ."/><br>
+              <input type="number" id="offset"   min="1" placeholder="#"/>
               <p class="error" id= "empty-offset"></p>
             </div>
-          </form>
-        </div>        
-        <div class="seleccion" id="botones">
-          <div class="left">
-            <button id="btn-encode" type="button" name="Cifrar" class="">CIFRAR</button>
-          </div>
-          <div class="right">
-            <button id="btn-decode"  type="button" name="descifrar" class="">DESCIFRAR</button>
-          </div>
-        </div>        
-      </div>
+            <div class="form-classic" id="botones">
+              <div class="left">
+                <button id="btn-encode" type="button" name="Cifrar" class="">CIFRAR</button>
+              </div>
+              <div class="right">
+                <button id="btn-decode"  type="button" name="descifrar" class="">DESCIFRAR</button>
+              </div>
+            </div> 
+        </form>              
+      </div>  
+
     </section>
 
     <!--Mostrar-->
     <section class="classic-container" id="resultado">
       <h1>El resultado es:</h1>
-      <div>
+      <div class="resultado-mensaje">
         <h1 id="final-message"></h1>
       </div>     
-      <button id="new-message" type="button" name="nuevo" >NUEVO MENSAJE</button>
+      <button class="nuevo" id="new-message" type="button" name="nuevo" >NUEVO MENSAJE</button>
     </section>
   
 
 
-    <footer>
-      <div class="footer">        
-        <p>Copyright © Todos los Derechos Reservados - Safe Key</p>
-      </div>
-    </footer>
+     
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
