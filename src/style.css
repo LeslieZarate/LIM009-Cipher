@@ -17,7 +17,7 @@ body{
 	font-size:40px;
 }
 .description{
-	background-color: rgba(0,128,128, 0.7);
+	background-color: rgba(0,128,128, 0.5);
 	color:#070429;
 	font-size: 25px;
 	padding: 10px;
@@ -28,30 +28,37 @@ body{
 }
 
 section {
-	background-color: rgba(192,192,192, 0.7);;
+	background-color: rgba(241, 243, 105, 0.4);;
 	text-align: center;	
 }
 
 .classic-container {				
 	width: 600px;
-	height: 400px;	
+	height: 450px;	
 	margin: 20px auto;
 	box-shadow: 2px 5px #EAF1F6;
 	border-radius: 6px;
 	font-weight: bold;
 	padding: 40px;
-	color: #070429;
+	color:#070429;
+	font-size: 23px;	
 }
 
 .form-classic{
 	margin-top:20px;
 }
+.form-classic p{
+	font-size: 15px;
+	color:red;
+ }
+
 
 label{	
 	margin-top:20px;	
 	display: block;
-    font-size: 21px;
-    color:#ffc60b; 
+    font-size: 24px;
+	color:#E3A90B; 
+	
  }
 
 .textarea{
@@ -117,7 +124,6 @@ button{
 #resultado{
 	display: none;
 }
-
 /***********RESULTADOS*************************/
 
 .resultado-mensaje{
@@ -132,7 +138,6 @@ button{
 	font-size: 20px;
 
 }
-
 .nuevo{
 	background-color:black;
 }
