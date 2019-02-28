@@ -13,9 +13,11 @@ opciones.addEventListener("click",(e)=>{
 	} 
 	else {
 		if(e.target.id ==="btn-encode"){
+			document.getElementById("mensajito").innerHTML="¡Listo ya es secreto!";
 			document.getElementById("final-message").innerHTML= cipher.encode(offset,menIngresado);
 		}
 		else if(e.target.id==="btn-decode"){
+			document.getElementById("mensajito").innerHTML="¡Que interesante!";
 			document.getElementById("final-message").innerHTML= cipher.decode(offset,menIngresado);
 		}
 		document.getElementById("programa").style.display="none";

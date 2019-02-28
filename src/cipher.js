@@ -5,8 +5,8 @@ window.cipher = {
         let resultCif =[];
 		//RECORRIDO EL MENSAJE INGRESADO
 		for (let i = 0; i < string.length; i++){
-			numeroAscii = string.charCodeAt(i);
-		/// mayúsculas
+			numeroAscii = string.charCodeAt(i);	
+		// mayúsculas
 			if (numeroAscii >= 65 && numeroAscii <= 90){
 				numeroAscii = String.fromCharCode((numeroAscii - 65 + parseInt(offset)) % 26 + 65);
 				resultCif = resultCif + numeroAscii;
