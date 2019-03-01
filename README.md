@@ -1,6 +1,6 @@
 # Safe Key
 
-![Safe-Key](src/img/principal.png)
+![Safe-Key](src/img/principal.jpg)
 
 ## Introducción:
 
@@ -38,7 +38,9 @@ Los colores observados son bastante sobrios y denotan un tono serio, sobrio, ele
 
 Se mostró el primer diseño  a las colaboradoras del equipo y se sugirió optimizar los colores, que estos estén en contraste con el fondo.
 
-###¿Cuál fue tu proceso para definir el producto final a nivel de experiencia y de interfaz?
+![Prototipo Safe-Key](src/img/prototipo.jpg)
+
+### ¿Cuál fue tu proceso para definir el producto final a nivel de experiencia y de interfaz?
 En primer lugar, pensar en los usuarios para quienes se deseaba construir la aplicación y en las necesidades de estas y que pudieran conectar con la temática del producto (encriptado de mensajes).
 Como segundo paso, definir la forma en la que pudieran interactuar con la aplicación, teniendo en cuenta que existen otras plataformas que ofrecen una mejor oferta para satisfacer las necesidades o resolver los problemas de los usuarios objetivo. Se pensó entonces en construir una herramienta rápida en funcionalidad, que vaya directo a su objetivo y ofrezca la sensación de satisfacción inmediata, brindando un poco más de lo que se espera. Como tercer punto se tomaron las decisiones de diseño, colores, emplazamiento y formas, así como la adición de interacción y atractivo visual. Posteriormente se presentaron los avances a discusión en el equipo de trabajo para recabar sugerencias e identificar errores.
 
@@ -54,10 +56,16 @@ También Se pueden apreciar dos botones: CIFRAR y DESCIFRAR. Cada uno realizan u
 - Convierte el texto original en texto cifrado a partir del desplazamiento indicado en la casilla de nivel de seguridad 
 - Al ser pulsado carga la siguiente sección, donde muestra un mensaje: "Listo! ya es secreto" junto con el texto cifrado.
 
+![Cifrado](src/img/cifrar.jpg)
+![Cifrado](src/img/cifrar-resultado.jpg)
+
 
 **Botón DESCIFRADO:**
 - Devuelve el texto original a partir del desplazamiento o nivel de seguridad brindado.
 - Al ser pulsado carga la siguiente sección, donde muestra el mensaje: “Que interesante!” junto con el texto descifrado cifrado.
+
+![Cifrado](src/img/descifrar.jpg)
+![Cifrado](src/img/descifrar-resultado.jpg)
 
 La segunda sección cuenta, asimismo, con dos alternativas de acción que son para el cifrado y descifrado así mismo el botón de nuevo mensaje.
 
