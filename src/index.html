@@ -2,25 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <div class="title-header"> 
-        <h1>Safe <img src="img/candado.png" alt="img" width="80px" height="80px"> Key</h1>
-      </div>    
+    <header class="encabezado">
+      <h1>Safe <img src="img/candado.png" alt="img" width="80px" height="80px"> Key</h1>
     </header>
-
 <!--Decripcion del producto-->
-    <section class="description">
-      <div class="">
-        <h2>Contraseñas cifradas para tu seguridad y tranquilidad.</h2>
-        <p>Resiste al hackeo y usa contraseñas seguras para diversas webs, tiendas online, o cualquier otro lugar en el que puedas necesitar una clave. </p>
-      </div>
-    </section>
-
+    <nav class="description">
+      <h2>Contraseñas cifradas para tu seguridad y tranquilidad.</h2>
+      <p>Resiste al hackeo y usa contraseñas seguras para diversas webs, tiendas online, o cualquier otro lugar en el que puedas necesitar una clave. </p>
+    </nav>
 <!-- PROGRAMA STRING Y OFFSET -->
     <section class="classic-container" id= "programa">
       <h1>Bienvenido al Encriptador de Contraseñas Seguras </h1>
@@ -36,7 +31,7 @@
               <input type="number" id="offset"   min="1" placeholder="#"/>
               <p class="error" id= "empty-offset"></p>
             </div>
-            <div class="form-classic" id="botones">
+            <div class="form-classic botones" id="botones">
               <div class="left">
                 <button id="btn-encode" type="button" name="Cifrar" class="">CIFRAR</button>
               </div>
@@ -45,18 +40,23 @@
               </div>
             </div> 
         </form>              
-      </div>  
-
+      </div>
     </section>
 
-    <!--Mostrar-->
+<!--Mostrar-->
     <section class="classic-container" id="resultado">
-      <div class="resultado-mensaje">
-          <h1 id="mensajito"></h1>
-        <textarea id="final-message" class ="textarea" cols="60" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+      <div class="form-classic botones">
+        <h1 id="mensajito"></h1>
+        <textarea id="final-message" class ="textarea" cols="50" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+        <button class="nuevo" id="new-message" type="button" name="nuevo" >NUEVO MENSAJE</button>
       </div>     
-      <button class="nuevo" id="new-message" type="button" name="nuevo" >NUEVO MENSAJE</button>
+      
     </section>
+
+
+
+
+    <footer class="pie-pagina"> Copyright © Todos los Derechos Reservados - Safe Key </footer>
   
 
 
