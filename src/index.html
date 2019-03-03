@@ -32,12 +32,8 @@
               <p class="error" id= "empty-offset"></p>
             </div>
             <div class="form-classic botones" id="botones">
-              <div class="left">
-                <button id="btn-encode" type="button" name="Cifrar" class="">CIFRAR</button>
-              </div>
-              <div class="right">
-                <button id="btn-decode"  type="button" name="descifrar" class="">DESCIFRAR</button>
-              </div>
+                <button id="btn-encode" type="button" name="Cifrar" class="btn-cifrar">CIFRAR</button>
+                <button id="btn-decode"  type="button" name="descifrar" class="btn-descifrar">DESCIFRAR</button>
             </div> 
         </form>              
       </div>
@@ -45,9 +41,11 @@
 
 <!--Mostrar-->
     <section class="classic-container" id="resultado">
-      <div class="form-classic botones">
+      <div class="form-classic">
         <h1 id="mensajito"></h1>
         <textarea id="final-message" class ="textarea" cols="50" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+      </div>
+      <div class="form-classic botones">
         <button class="nuevo" id="new-message" type="button" name="nuevo" >NUEVO MENSAJE</button>
       </div>     
       

@@ -6,10 +6,12 @@ opciones.addEventListener("click",(e)=>{
 	let emptyOffset=document.getElementById("empty-offset");
 
 	if (menIngresado === ""){
-		emptyString.innerHTML = "Ingresa tu mensaje";		
+		emptyString.innerHTML = "Ingresa tu mensaje";
+		menIngresado.readOnly = false;		
 	} 
 	else if (offset === ""){
-		emptyOffset.innerHTML = "Ingresa tu número clave";		
+		emptyOffset.innerHTML = "Ingresa tu número clave";
+		offset.readOnly = false;		
 	} 
 	else {
 		if(e.target.id ==="btn-encode"){

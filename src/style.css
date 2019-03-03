@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;    
 }
+
 body{
-	background-image: url("img/fondo2.jpg");
-	background-repeat: no-repeat;
-	background-attachment:fixed; 
-	background-size:cover;
+	background: url("img/fondo2.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .encabezado ,.description ,.classic-container ,.pie-pagina { 
 	padding: 10px;
@@ -21,6 +23,8 @@ body{
 	color:#E3A90B;	
 	font-size: 40px;
 	font-family:Georgia, Serif;	
+	width: 100%;
+	
 }
 .description,.pie-pagina{
 	background-color: rgba(0,128,128, 0.3);
@@ -41,7 +45,7 @@ body{
 	background-color: rgba(95, 95, 89, 0.6);
 	color:#070429;
 	font-size: 20px;
-	width: 600px;
+	width: 40%;
 	height: auto;
 	border-radius: 6px;	
 	margin: 30px auto;
@@ -61,11 +65,11 @@ body{
 .form-classic textarea,input{
 	border-radius: 4px;
 	margin-top: 20px ;
-	resize: none;/*
+	
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;	
-    width: 100%;*/
+    width: 80%;
 }
 .form-classic textarea{
 	padding: 20px;
@@ -78,22 +82,22 @@ body{
 }
 /***BOTONES**/
 .botones button{
-	width: 150px;
-	height: 50px;
+	width: 20%;
+	height: 25%;
 	border: none; 
 	border-radius: 3px;
 	padding: 10px 20px;
-	font-size: 15px;
 	font-weight: bold;
 	color: #ccc;
 	text-align: center;
+	display: inline-block;
+	
 }
-.left button{
-	float:left;
-	margin-left: 100px;
+.btn-cifrar{
 	background-color: #913535;
-}
-.right button{
+	margin-right: 100px;
+}	
+.btn-descifrar{	
 	background-color:#283148;
 }
 /****RESULTADOS*******/
