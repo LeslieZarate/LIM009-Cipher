@@ -54,14 +54,14 @@ También Se pueden apreciar dos botones: CIFRAR y DESCIFRAR. Cada uno realizan u
 - Al ser pulsado carga la siguiente sección, donde muestra un mensaje: "Listo! ya es secreto" junto con el texto cifrado.
 
 ![Cifrado](src/img/cifrar.jpg)
-![Cifrado](src/img/cifrar-resultado.jpg)
+![Cifrado-Resultado](src/img/cifrar-resultado.jpg)
 
 **Botón DESCIFRADO:**
 - Devuelve el texto original a partir del desplazamiento o nivel de seguridad brindado.
 - Al ser pulsado carga la siguiente sección, donde muestra el mensaje: “Que interesante!” junto con el texto descifrado cifrado.
 
-![Cifrado](src/img/descifrar.jpg)
-![Cifrado](src/img/descifrar-resultado.jpg)
+![Descifrado](src/img/descifrar.jpg)
+![Descifrado-Resultado](src/img/descifrar-resultado.jpg)
 
 La segunda sección cuenta, asimismo, con dos alternativas de acción que son para el cifrado y descifrado así mismo el botón de nuevo mensaje.
 
