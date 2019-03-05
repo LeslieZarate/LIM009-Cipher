@@ -1,113 +1,100 @@
 *{
-    margin: 0;
+    margin: 0
     padding: 0;    
 }
-
 body{
-	background: url("img/fondo2.jpg") no-repeat center center fixed;
+	background: url("img/fondo.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	font-family:Georgia, Serif;
 }
-.encabezado ,.description ,.classic-container ,.pie-pagina { 
-	padding: 10px;
-	text-align: center;
-	margin: auto;
-}
-.description ,.classic-container ,.pie-pagina {	
-	box-sizing:border-box;
-}
-.encabezado{
-	background-color: rgba(51, 113, 147, 0.14);
-	color:#E3A90B;	
-	font-size: 40px;
-	font-family:Georgia, Serif;	
-	width: 100%;
-	
-}
-.description,.pie-pagina{
-	background-color: rgba(0,128,128, 0.3);
-	color:#070429;
-	font-size: 23px;
-	width: 100%;
-}
-.description p{
-	color:#deecff;
-}
-/***FOOTER*****/
-.pie-pagina{
-	font-size:13px;	
-	color:#deecff;
-}
-/***FORMULARIO**/
-.classic-container{	
-	background-color: rgba(95, 95, 89, 0.6);
-	color:#070429;
-	font-size: 20px;
-	width: 40%;
-	height: auto;
-	border-radius: 6px;	
-	margin: 30px auto;
-}
-.form-classic{
-	margin:30px auto;
-	color:#E3A90B; 
-	font-weight: bold;	
-}
-.form-classic p{
-	color:#deecff;
-	font-size: 15px;
-}
-.form-classic label{
-	display: block;    
-}
-.form-classic textarea,input{
-	border-radius: 4px;
-	margin-top: 20px ;
-	
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;	
-    width: 80%;
-}
-.form-classic textarea{
-	padding: 20px;
-}
-.form-classic input{	
-	width: 50px;
-	height:40px;
-	font-weight: bold;
-	text-align: center;	
-}
-/***BOTONES**/
-.botones button{
-	width: 20%;
-	height: 25%;
-	border: none; 
-	border-radius: 3px;
-	padding: 10px 20px;
-	font-weight: bold;
-	color: #ccc;
-	text-align: center;
-	display: inline-block;
-	
-}
-.btn-cifrar{
-	background-color: #913535;
-	margin-right: 100px;
-}	
-.btn-descifrar{	
-	background-color:#283148;
-}
-/****RESULTADOS*******/
-.nuevo {
-	background-color:black;
-	margin-top: 20px;
-}
-/*  ocultar ventana*/
 #resultado{
 	display: none;
 }
+
+/**header*/
+.container-fluid{
+	background-color: rgba(51, 113, 147, 0.5);
+	text-align: center;	
+	padding: 5px;	
+}
+.page-head h1{
+	font-size:70px;	
+	color:#E3A90B;	
+}
+.page-head h1 , .banner h2{
+	font-weight: bold;
+}
+
+/*Redes sosciales*/
+.social-header {
+	padding: 20px;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:center	
+}
+.social-header a {
+	color: #fff;
+}	
+.social-header a .fa-inverse {
+	color:#E3A90B;	
+}
+/* descripcion***/
+.banner{
+	background-color: rgba(51, 113, 147, 1);
+	color:#070429;
+}
+.banner h4{
+color:#E3A90B;
+}
+
+/******FOMULARIO***/
+.container{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	background-color: rgba(83, 108, 118, 0.4);
+	padding:1.5em;
+	font-weight: bold;
+}
+.container h2{
+	font-weight: bold;
+	text-align: center;
+	color:#070429;
+}
+.classic-container{
+	margin:0 80px;
+}
+.form-group label{
+	color: #E3A90B;	
+	margin-top:15px;
+}
+.form-group input{
+	text-align: center;
+}
+.form-group p{
+	text-align: center;
+	color:#deecff;
+}
+
+#botones {
+	display: block;		
+	margin-left: 30%;
+}
+button{
+	margin-bottom: 10px; 
+}
+.btn-center{
+	margin-top:25px;
+	display: block;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
 
 
