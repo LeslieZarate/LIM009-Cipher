@@ -77,13 +77,12 @@ color:#E3A90B;
 	text-align: center;
 	color:#deecff;
 }
-
 #botones {
 	display: block;		
 	margin-left: 30%;
 }
 button{
-	margin-bottom: 10px; 
+	margin-bottom: 20px; 
 }
 .btn-center{
 	margin-top:25px;
