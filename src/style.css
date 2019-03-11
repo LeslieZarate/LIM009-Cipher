@@ -1,98 +1,151 @@
-*{
-    margin: 0;
-    padding: 0;    
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+@import url(main.css);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 body{
-	background: url("img/fondo.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	font-family:Georgia, Serif;
+	font-family: 'Concert One', cursive;
+	background: url('https://3.bp.blogspot.com/-jnLGcmFedUE/XBIDo7uBqyI/AAAAAAAAGO0/wrNmT82NMdkl586YUn0xx5dakaWee1nbwCLcBGAs/s1600/giphy.gif') no-repeat center center fixed;
+	background-size:cover;	
+}	
+h1{
+	text-align: center;
+
 }
-#result{
+p{
+	font-size: 1.5rem;
+}
+.color-title{
+	color:#E3A90B;
+}
+.color-text{
+	color:rgba(147,206,222,1);
+}
+.aling-center{
+	text-align: center;
+}
+.aling-justify{
+	text-align: justify;
+}
+
+/***************CONTENIDO ************/
+.container{		
+	width: 90%;
+	margin: 10rem  auto;
+	font-size: 1.2rem;
+	height: 100%;
+}
+.about-home{
+	width: 100%;
+	padding: 2rem;	
+}
+section,aside {
+   border-radius: 3px;
+ }
+section{	
+	float: right;
+  	width: 80%;  	
+  	border: 1px solid #ccc;
+}
+aside {
+  	float: left;
+  	width: 20%;
+  	border: 1px solid #ccc;
+  	padding: 2rem;
+ }
+
+/*** formulario*/
+.form-content{
+	padding: 1.5em;
+	width: 50%;
+	margin: 1rem auto;
+	display: inline-block;
+		
+}
+.form{
+	border-radius: 4px ;
+	background-color: rgba(83, 108, 118, 0.7);
+	margin: 1rem;
+	padding: 1rem;
+}
+.form-group{
+	padding: 0.5rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  text-align: center;
+  margin-top: 0.5rem
+}
+
+button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+  font-family: 'Concert One', cursive; 
+}
+
+/************* ASIDE ******/
+ol li{
+	margin-top: 1rem;
+}
+
+/******footer***/
+
+.main-footer {
+	background: #333;
+	position: fixed;
+	width: 100%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 10px 0px 10px 0px;
+}
+.main-footer p{
+	font-size: 1rem;
+}
+.main-footer a {
+	margin: 0;
+	color:#E3A90B;
+	text-decoration: none;
+}
+	
+/***para TABLETS*/
+@media only screen and (max-width: 1300px) {
+
+  aside,section{
+  	width: 100%;
+  }
+  p,h1{
+  	font-size: 1rem;
+  }
+  .title h1{
+  	font-size: 2rem;
+  }
+  .container{		
+	font-size: 0.8rem;	
+}
+  .form-content{
+  	width: 100%;
+  } 
+  aside {   
+   height: auto;
+   margin-bottom: 4rem;
+   } 
+}
+
+
+
+/*****ocultar*/
+#instructions,#program{
 	display: none;
 }
-
-/**header*/
-.container-fluid{
-	background-color: rgba(51, 113, 147, 0.5);
-	text-align: center;	
-	padding: 5px;	
-}
-.page-head h1{
-	font-size:70px;	
-	color:#E3A90B;	
-}
-.page-head h1 , .banner h2{
-	font-weight: bold;
-}
-
-/*Redes sosciales*/
-.social-header {
-	padding: 20px;
-	display: flex;
-	flex-wrap:wrap;
-	justify-content:center	
-}
-.social-header a {
-	color: #fff;
-}	
-.social-header a .fa-inverse {
-	color:#E3A90B;	
-}
-/* descripcion***/
-.banner{
-	background-color: rgba(51, 113, 147, 1);
-	color:#070429;
-}
-.banner h4{
-color:#E3A90B;
-}
-
-/******FOMULARIO***/
-.container{
-	margin-top: 50px;
-	margin-bottom: 20px;
-	background-color: rgba(83, 108, 118, 0.4);
-	padding:1.5em;
-	font-weight: bold;
-}
-.container h2{
-	font-weight: bold;
-	text-align: center;
-	color:#070429;
-}
-.classic-container{
-	margin:0 80px;
-}
-.form-group label{
-	color: #E3A90B;	
-	margin-top:15px;
-}
-.form-group input{
-	text-align: center;
-}
-.form-group p{
-	text-align: center;
-	color:#deecff;
-}
-#botones {
-	display: block;		
-	margin-left: 30%;
-}
-button{
-	margin-bottom: 20px; 
-}
-.btn-center{
-	margin-top:25px;
-	display: block;
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-
-
-
