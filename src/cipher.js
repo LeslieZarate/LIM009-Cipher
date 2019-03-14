@@ -46,5 +46,3 @@ window.cipher = {
 		return resultDes; 
 	}
 };
-
-

@@ -1,96 +1,154 @@
-*{
-    margin: 0;
-    padding: 0;    
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+@import url(main.css);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 body{
-	background: url("img/fondo.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	font-family:Georgia, Serif;
+	font-family: 'Concert One', cursive;
+	background: url('https://3.bp.blogspot.com/-jnLGcmFedUE/XBIDo7uBqyI/AAAAAAAAGO0/wrNmT82NMdkl586YUn0xx5dakaWee1nbwCLcBGAs/s1600/giphy.gif') no-repeat center center fixed;
+	background-size:cover;	
 }
-#result{
+
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+ .row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+} 
+
+[class*= "col-"] { 
+    padding: 1em; /*15px*/
+    /*margin-right: 2%; /*Esto es el gutter */
+    float: left;
+ }
+
+section{
+	margin-top: 8rem ;
+}
+
+.title{
+	color: #E3A90B
+}
+
+.text-color{
+	color:rgba(147,206,222,1);
+}
+
+.text-center{
+	text-align: center;
+}
+/***** SECCIONES MOSTRAR ******/
+#instructions,#program{
 	display: none;
 }
 
-/**header*/
-.container-fluid{
-	background-color: rgba(51, 113, 147, 0.5);
-	text-align: center;	
-	padding: 5px;	
-}
-.page-head h1{
-	font-size:70px;	
-	color:#E3A90B;	
-}
-.page-head h1 , .banner h2{
-	font-weight: bold;
+                             /*##########    ESTILOS OTROS ###########*/
+
+/***** ESTILOS ASIDE - INSTRUCIONS *****/ 
+
+ ol li{
+	margin-top: 1rem;
+	text-align: justify;
 }
 
-/*Redes sosciales*/
-.social-header {
-	padding: 20px;
-	display: flex;
-	flex-wrap:wrap;
-	justify-content:center	
+/***** ESTILOS FORMULARIO ******/
+.form{
+	border-radius: 4px ;
+	background-color: rgba(83, 108, 118, 0.7);
+	margin: 1rem;
+	padding: 1rem;
 }
-.social-header a {
-	color: #fff;
-}	
-.social-header a .fa-inverse {
-	color:#E3A90B;	
-}
-/* descripcion***/
-.banner{
-	background-color: rgba(51, 113, 147, 1);
-	color:#070429;
-}
-.banner h4{
-color:#E3A90B;
+.form-group{
+	padding: 0.5rem;
 }
 
-/******FOMULARIO***/
-.container{
-	margin-top: 50px;
-	margin-bottom: 20px;
-	background-color: rgba(83, 108, 118, 0.4);
-	padding:1.5em;
-	font-weight: bold;
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  text-align: center;
+  margin-top: 0.5rem
 }
-.container h2{
-	font-weight: bold;
-	text-align: center;
-	color:#070429;
-}
-.classic-container{
-	margin:0 80px;
-}
-.form-group label{
-	color: #E3A90B;	
-	margin-top:15px;
-}
-.form-group input{
-	text-align: center;
-}
-.form-group p{
-	text-align: center;
-	color:#deecff;
-}
-#botones {
-	display: block;		
-	margin-left: 30%;
-}
+
 button{
-	margin-bottom: 20px; 
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+  font-family: 'Concert One', cursive; 
 }
-.btn-center{
-	margin-top:25px;
-	display: block;
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
+
+/****************       RESPONSIVE ********************/
+
+/*Mobile First */
+  .col-xs-12 {
+    width: 100%;
+  }
+
+
+/* Tablet */
+
+ @media (min-width: 768px) {
+
+    body {
+    	font-size: 1.2rem;      
+    }
+
+    section{
+	margin-top: 10rem ;
+	}
+    
+	article{
+		padding: 1em;
+	}
+	aside{	
+		margin-top:1rem;
+	}
+
+
+    .col-sm-4{
+    	width:30%;
+    }
+    
+    .col-sm-8{
+    	width: 70%;
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
