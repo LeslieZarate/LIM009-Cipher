@@ -10,7 +10,7 @@ document.getElementById("main").addEventListener("click",(e)=>{
     btnEncode.addEventListener("click",()=>{
       let messageEncode = document.getElementById("messageEncode").value;
       let offsetEncode = document.getElementById("offsetEncode").value;
-      document.getElementById("result-encode").innerHTML=`RESULTADO: <br> ${cipher.encode(offsetEncode,messageEncode)}`;
+      document.getElementById("result-encode").innerHTML=cipher.encode(offsetEncode,messageEncode);
     });
   }
   else if(e.target.id ==="decode"){
@@ -21,7 +21,7 @@ document.getElementById("main").addEventListener("click",(e)=>{
     btnDecode.addEventListener("click",()=>{
 			let messageDecode = document.getElementById("messageDecode").value;
 			let offsetDecode = document.getElementById("offsetDecode").value;
-			document.getElementById("result-decode").innerHTML= `RESULTADO: <br> ${cipher.decode(offsetDecode,messageDecode)}`;
+			document.getElementById("result-decode").innerHTML= cipher.decode(offsetDecode,messageDecode);
     });
   }
 });	
