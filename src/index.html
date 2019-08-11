@@ -1,68 +1,124 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+	<title>Safe Key</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 , maximun-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<!--Section Header -->
+	<header class="main-header">
+	  <div class="container">
+	    <div class="row">
+	        <div class="col-xs-12 title-page">
+	            <h1 class="title">Safe Key</h1>
+	        </div>
+	        <nav class="navbar col-xs-12">				
+						<span class="navbar-toggle" id="navbar-toggle">Menu
+	          	<i class="fas fa-bars"></i>
+	        	</span>      
+		        <ul class="main-nav" id="main">
+		          <li><a href="index.html" class="nav-links" id="home"> Home </a></li>
+		          <li><a href="#Cifrar" class="nav-links" id="encode">Cifrar</a></li>
+		          <li><a href="#Descifrar" class="nav-links" id="decode">Descifrar</a></li>    
+		        </ul>					
+					</nav> 
+	    </div>
+	  </div>	  
+	</header>
+	
+<!--Section About Home -->
+	<section class="about-home" id="about-home">
+	  <div class="container">   
+	    <div class="row">
+	      <div class="col-xs-12">
+	      	<h2 class="title">Contraseñas cifradas para tu seguridad y tranquilidad.</h2>
+	      	<p class="text-color">Evita el hackeo y usa contraseñas seguras para diversas webs, tiendas online, o cualquier otro lugar en el que puedas necesitar una clave.</p>
+	      </div>
+	      <div class="col-xs-12">
+	      	<h2 class="title">Nuestros Servicios</h2>
+	      	<div class="text-color text-center">
+	        	<h3>CIFRAR</h3>
+	          <h3>DESCIFRAR</h3>
+	      	</div> 
+	      </div>
+	    </div>
+	  </div> 
+	</section>
 
-  <body>
-    <header class="header-title p1 text-center">
-      <h1 class="color-title">Safe <img src="img/candado.png" alt="img"> Key</h1>
-     </header>
-    <main>
-      <!--Decripcion del producto   -->
-      <nav class="nav-description p1 text-center">
-        <h2 class="color-text">Contraseñas cifradas para tu seguridad y tranquilidad.</h2>
-        <p class="color-text1">Resiste al hackeo y usa contraseñas seguras para diversas webs, tiendas online, o cualquier otro lugar en el que puedas necesitar una clave. </p>
-        
-      </nav>
-  <!-- PROGRAMA STRING Y OFFSET -->
-      <section class="classic-container text-center " id= "programa">
-        <h3 class="color-title">Bienvenido al Encriptador de Contraseñas Seguras </h3>
-        <div  id="formulario">        
-          <form>
-            <div class="form-classic">
-              <label for="message">Ingrese Texto :</label>
-              <textarea id="message" class ="textarea" cols="60" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
-                 <p class="error" id= "empty-string"></p>
-              </div>
-              <div class="form-classic">
-                <label for="offset">Nivel de Seguridad:</label>
-                <input type="number" id="offset"   min="1" placeholder="#"/>
-                <p class="error" id= "empty-offset"></p>
-              </div>
-              <div class="form-botones m1" id="botones">
-                  <button id="btn-encode" type="button" name="Cifrar" class="btn-cifrar">CIFRAR</button>
-                  <button id="btn-decode"  type="button" name="descifrar" class="btn-descifrar">DESCIFRAR</button>
-              </div> 
-          </form>              
-        </div>
-      </section>
-  
-  <!--Mostrar-->
-      <section class="classic-container text-center p1 d-none" id="resultado">
-        <div class="form-classic m1">
-          <h3 id="mensajito"></h3>
-          <textarea id="final-message" class ="textarea" cols="50" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
-        </div>
-        <div class="form-botones m1">
-          <button class="nuevo" id="new-message" type="button" name="nuevo" >NUEVO MENSAJE</button>
-        </div>     
-        
-      </section>
+	<!--Section Programa -->
+	<section class="program" id="program">
+		<div class="container">
+			<div class="row">
+				<aside class="col-xs-12 col-sm-4 col-md-4  instructions" id="instructions">
+					<h2 class="title">Instrucciones para usar Safe Key</h2>
+					<div class="list-instructions text-color">
+	          <ol>
+	            <li>Ingresa tu nombre o palabra facil de recordar, en la primera casilla</li>
+	            <li>Ingresa el nivel de seguridad que deseas</li>
+	            <li>Cifre o descifre los datos ingresados</li>
+	            <li>Obten tu codigo de acceso más seguro</li>
+	          </ol>          
+        	</div>
+				</aside>
 
-      
-    </main>
+        <div class="col-xs-12 col-sm-8 col-md-8">
+        	<article  id="form-encode">
+	          <h2 class="title">CIFRAR</h2>
+	          <form class="form text-color" id="form">             
+	            <div class="form-group">
+	              <label for="messageEncode">Mensaje :</label>
+	              <textarea id="messageEncode" class ="form-control" cols="60" rows="4" placeholder="Escribe tu mensaje aquí." required="required"></textarea>
+	            </div>
+	            <div class="form-group">
+	              <label for="offsetEncode">Nivel de Seguridad :</label>
+	              <input type="number" id="offsetEncode" class="form-control" min="1" placeholder="#" required="required" />
+	            </div>
+	            <div class="form-group">
+	              <button id="btn-encode" type="submit" class="btn">CIFRAR</button>
+	            </div>
+	          </form>
+	          <div class="form-group">
+	            <p id="result-encode"></p>
+	          </div>
+        	</article>
 
+        	<article  id="form-decode">
+	          <h2 class="title">DESCIFRAR</h2>
+	          <form class="form text-color" id="form1">             
+	            <div class="form-group">
+	              <label for="messageDecode">Mensaje :</label>
+	              <textarea id="messageDecode" class ="form-control" cols="60" rows="4" placeholder="Escribe tu mensaje aquí." required="required"></textarea>
+	            </div>
+	            <div class="form-group">
+	              <label for="offsetDecode">Nivel de Seguridad :</label>
+	              <input type="number" id="offsetDecode" class="form-control" min="1" placeholder="#" required="required" />
+	            </div>
+	            <div class="form-group">
+	              <button id="btn-decode" type="submit" class="btn">DESCIFRAR</button>
+	            </div>
+	          </form>
+	          <div class="form-group">
+	            <p id="result-decode"></p>
+	          </div>       
+	        </article>        	
+        </div>				
+			</div>			
+		</div>		
+	</section>
 
-    <footer class="footer text-center ">© Safe Key by Developer Leslie Zarate </footer>
-  
-
-
-     
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+	<footer>
+		<div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          Copyright &copy; Your Website 2017 
+        </div>   
+      </div>
+  	</div>
+	</footer>
+	<script type="text/javascript" src="cipher.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
 </html>

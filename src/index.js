@@ -1,60 +1,34 @@
-const opciones=document.getElementById("botones");
-opciones.addEventListener("click",(e)=>{
-	e.preventDefault(e);
+document.getElementById("main").addEventListener("click",(e)=>{
+	document.getElementById("about-home").style.display="none";
+  document.getElementById("instructions").style.display="block";
+  document.getElementById("program").style.display="block";
+  if(e.target.id ==="encode"){
+		document.getElementById("form-encode").style.display="block";
+    document.getElementById("form-decode").style.display="none";
+    limpiar();
+    const btnEncode = document.getElementById("btn-encode");
+    btnEncode.addEventListener("click",()=>{
+      let messageEncode = document.getElementById("messageEncode").value;
+      let offsetEncode = document.getElementById("offsetEncode").value;
+      document.getElementById("result-encode").innerHTML=cipher.encode(offsetEncode,messageEncode);
+    });
+  }
+  else if(e.target.id ==="decode"){
+		document.getElementById("form-decode").style.display="block";
+    document.getElementById("form-encode").style.display="none";
+    limpiar();
+    const btnDecode = document.getElementById("btn-decode");
+    btnDecode.addEventListener("click",()=>{
+			let messageDecode = document.getElementById("messageDecode").value;
+			let offsetDecode = document.getElementById("offsetDecode").value;
+			document.getElementById("result-decode").innerHTML= cipher.decode(offsetDecode,messageDecode);
+    });
+  }
+});	
 	
-	let menIngresado=document.getElementById("message").value;
-	let offset=document.getElementById("offset").value;
-	let emptyString=document.getElementById("empty-string");
-	let emptyOffset=document.getElementById("empty-offset");
-
-	if (menIngresado === ""){
-		emptyString.innerHTML = "Ingresa tu mensaje";
-		menIngresado.readOnly = false;		
-	} 
-	else if (offset === ""){
-		emptyOffset.innerHTML = "Ingresa tu número clave";
-		offset.readOnly = false;		
-	} 
-	else {
-		if(e.target.id ==="btn-encode"){
-			document.getElementById("mensajito").innerHTML="¡Listo ya es secreto!";
-			document.getElementById("final-message").innerHTML= cipher.encode(offset,menIngresado);
-		}
-		else if(e.target.id==="btn-decode"){
-			document.getElementById("mensajito").innerHTML="¡Que interesante!";
-			document.getElementById("final-message").innerHTML= cipher.decode(offset,menIngresado);
-		}
-		document.getElementById("programa").style.display="none";
-		document.getElementById("resultado").style.display="block";
-	}
-});
-
-/*Nuevo Mensaje*/
- const newMessage = document.getElementById("new-message");
- newMessage.addEventListener("click",()=>{
-	location.reload();
- });
- 
-
-/*
- document.getElementById("btn-encode").addEventListener("click",cifrar=()=>{
-	let menIngresado=document.getElementById("message").value;
-	let offset=document.getElementById("offset").value;
-
-	document.getElementById("final-message").innerHTML= cipher.encode(offset,menIngresado);	
-	document.getElementById("programa").style.display="none";
-    document.getElementById("resultado").style.display="block";
-
- });
- 
-document.getElementById("btn-decode").addEventListener("click",funcionDescifrar);
-function funcionDescifrar(){
-	let menIngresado=document.getElementById("message").value;
-	let offset=document.getElementById("offset").value;
-	document.getElementById("final-message").innerHTML= cipher.decode(offset,menIngresado);
-	
-	document.getElementById("programa").style.display="none";
-    document.getElementById("resultado").style.display="block"; 
-
+function limpiar(){
+	document.getElementById("form1").reset();
+	document.getElementById("form").reset();
+	document.getElementById("result-encode").innerHTML="";
+	document.getElementById("result-decode").innerHTML="";	
 }
-*/

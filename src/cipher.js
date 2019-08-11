@@ -21,6 +21,9 @@ window.cipher = {
 				numeroAscii = String.fromCharCode((numeroAscii - 48 + parseInt(offset)) % 10 + 48);
 				resultCif = resultCif + numeroAscii;
 			}
+			else if(numeroAscii === 32) {
+				resultCif = resultCif + String.fromCharCode(numeroAscii);
+			}
 		}
 		return resultCif;
 	},
@@ -42,9 +45,10 @@ window.cipher = {
 				numeroAscii = String.fromCharCode((numeroAscii - 57 - parseInt(offset)) % 10 + 57);
 				resultDes = resultDes + numeroAscii;
 			}
+			else if(numeroAscii === 32) {
+				resultDes = resultDes + String.fromCharCode(numeroAscii);
+			}
 		}
 		return resultDes; 
 	}
 };
-
-

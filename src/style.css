@@ -1,178 +1,156 @@
-@import url('https://fonts.googleapis.com/css?family=Acme|Anton|Fjalla+One|Roboto&display=swap');
-*{
-    margin: 0;
-    padding: 0;    
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+@import url(main.css);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+	font-family: 'Concert One', cursive;
+	background: url('https://3.bp.blogspot.com/-jnLGcmFedUE/XBIDo7uBqyI/AAAAAAAAGO0/wrNmT82NMdkl586YUn0xx5dakaWee1nbwCLcBGAs/s1600/giphy.gif') no-repeat center center fixed;
+	background-size:cover;	
 }
 
-body{
-	background: url("img/fondo.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;	
-	font-family: 'Fjalla One', sans-serif;
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
 }
-.d-none{
-	display: none;
+
+ .row:before, .row:after {
+    content: " ";
+    display: table;
 }
-.m1{
-	margin: 1%
+
+.row:after {
+    clear: both;
+} 
+
+[class*= "col-"] { 
+    padding: 1em; /*15px*/
+    /*margin-right: 2%; /*Esto es el gutter */
+    float: left;
+ }
+
+section{
+	margin-top: 8rem ;
 }
-.p1{
-	padding: 1%;
+
+.title{
+	color: #E3A90B
 }
+
+.text-color{
+	color:rgba(147,206,222,1);
+}
+
 .text-center{
 	text-align: center;
 }
-.color-title{
-	color:#070429
-}
-.color-text1{
-	color:#fff;
-}
-.color-text{
-	color:#E3A90B;	
-}
-header{
-	height: 10vh;
-}
-.header-title {		
-	font-size:25px;
-	font-weight: 300;
-	background-color: rgba(88, 177, 159,1.0);	
-
-}
-.header-title img {
-	width: 50px;
-	height: 50px;	
-}
-main{	
-	background-color:rgba(95, 95, 89, 0.4);
-	height: 80vh;
-}
-.nav-description h2{
-	font-size: 14px;
-}
-.nav-description p{
-	font-size: 10px;	
+/***** SECCIONES MOSTRAR ******/
+#instructions,#program{
+	display: none;
 }
 
-.classic-container{	
-	background-color: rgba(88, 177, 159,0.3);
-	height: auto;
-	border-radius: 6px;	
+                             /*##########    ESTILOS OTROS ###########*/
+
+/***** ESTILOS ASIDE - INSTRUCIONS *****/ 
+
+ ol li{
+	margin-top: 1rem;
+	text-align: justify;
+}
+
+/***** ESTILOS FORMULARIO ******/
+.form{
+	border-radius: 4px ;
+	background-color: rgba(83, 108, 118, 0.7);
 	margin: 1rem;
 	padding: 1rem;
-	font-weight: bold;
 }
-.classic-container h3{	
-	font-size: 13px;	
-}
-.form-classic{
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 2%;
-}
-.form-classic label{
-	margin: 1%;
-	color:	#E3A90B;
-	font-size: 12px;
+.form-group{
+	padding: 0.5rem;
 }
 
-.form-classic textarea,input{
-	border-radius: 4px;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-	box-sizing: border-box;	
-	margin :auto
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  text-align: center;
+  margin-top: 0.5rem
 }
 
-.form-classic textarea{	
-	width: 80%;	
-}
-.form-classic input{
-	width: 20%;
-	height: 30px;
-	text-align: center;
-}
-
-.form-classic textarea{
-	padding: 20px;
+button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+  font-family: 'Concert One', cursive; 
 }
 
-.form-classic p{
-	font-size: 10px;
-	color:red;
-}
+/****************       RESPONSIVE ********************/
 
-/***BOTONES**/
-.form-botones{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;	
-}
-
-.form-botones button{
-	width: 100px;
-	height: 40px;
-	border: none; 
-	border-radius: 3px;
-	padding: 10px 20px;
-	font-weight: bold;
-	color: #ccc;
-	text-align: center;
-	font-size: 10px;
-}
-.btn-cifrar{
-	background-color: #913535;
-	margin-right: 100px;
-}	
-.btn-descifrar{	
-	background-color:#283148;
-}
-/****RESULTADOS*******/
-.nuevo {
-	background-color:black;
-	margin-top: 20px;
-}
-
-footer{
-	height: 5vh;
-}
-.footer{
-	padding: 0.7%;		
-	bottom: 0;
-	font-size:14px;
-	font-weight: 300;
-	background-color: rgba(88, 177, 159,1.0);
-}
+/*Mobile First */
+  .col-xs-12 {
+    width: 100%;
+  }
 
 
-@media(min-width: 768px){
-	main{	
-		height: 78vh;
+/* Tablet */
+
+ @media (min-width: 768px) {
+
+    body {
+    	font-size: 1.2rem;      
+    }
+
+    section{
+	margin-top: 10rem ;
 	}
-	.header-title ,.nav-description h2 {		
-		font-size:35px;			
+    
+	article{
+		padding: 1em;
 	}
-	
-	.nav-description p ,.classic-container h3{
-		font-size: 25px;	
-	}
-	
-	.classic-container{	
-		width: 50%;
-		margin: 1% auto;
+	aside{	
+		margin-top:1rem;
 	}
 
-	.form-botones  button {	
-		font-size: 14px;	
-		width: 150px;
-		height: 50px;
-	}
-	.classic-container label{
-		font-size: 20px;		
-	}
-	
+
+    .col-sm-4{
+    	width:30%;
+    }
+    
+    .col-sm-8{
+    	width: 70%;
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
